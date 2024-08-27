@@ -1,49 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal Solution</title>
 
     <!-- Google Font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/e7d365f835.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Tailwind and DaisyUI CDN  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              fontFamily: {
-                "poppins": ["Poppins", "sans-serif"],
-                "garamond": ["EB Garamond", "serif"],
-              },
-            }
-          }
-        }
-      </script>
-</head>
-<body class="font-poppins">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+              garamond: ["EB Garamond", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-poppins container mx-auto">
     <!-- Header section  -->
-     <header>
-        <h1>Legal solution</h1>
-     </header>
+    <header class="pt-12 mb-[120px]">
+      <!-- Navbar  -->
+      <nav class="mb-[50px]">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="flex items-center">
+              <img src="./images/business.png" alt="" class="w-11 h-11" />
+              <a class="btn btn-ghost text-xl">Justice</a>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-[#707070]">
+              <li><a>Home</a></li>
+              <li>
+                <a>Service<i class="fa-solid fa-angle-right"></i></a>
+              </li>
+              <li>
+                <a>Class<i class="fa-solid fa-angle-right"></i></a>
+              </li>
+              <li>
+                <a>Blog<i class="fa-solid fa-angle-right"></i></a>
+              </li>
+              <li>
+                <a>Contact US<i class="fa-solid fa-angle-right"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-[#B68C5A] text-white"
+              >Free Consultation</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner section  -->
+       <section class="bg-cover py-[104px] rounded-lg" style="background-image: url('./images/banner.png')" >
+
+        <div class="md:max-w-[692px] mx-auto">
+          <h1 class="font-garamond text-white text-7xl font-extrabold leading-[85px] text-center lg:mb-6">We Provide Effective Legal Solutions</h1>
+          <p class="text-center text-[#E7E7E7] lg:mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <div class="text-center space-x-6">
+            <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-xs" />
+          <button class="btn">Search</button>
+          </div>
+        </div>
+
+       </section>
+    </header>
 
     <!-- Main section  -->
-     <main>
-
-     </main>
+    <main>
+      <!-- The Legal Practice Area  -->
+       <section>
+        <h2 class="font-garamond text-[40px] font-extrabold leading-[52px] text-[#414040] text-center">The Legal Practice Area</h2>
+       </section>
+    </main>
 
     <!-- Footer section  -->
-     <footer>
-
-     </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
